@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: blanchedalmond;
+}
+h1 {
+    color: #333;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+.image-container .image-caption {
+    margin-top: 10px;
+}
