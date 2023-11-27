@@ -3,6 +3,8 @@ body {
     text-align: center;
     margin: 20px;
     background-color: blanchedalmond;
+    font-size: 25px;
+    font-weight: bold;
 }
 h1 {
     color: #333;
@@ -14,10 +16,26 @@ h1 {
     gap: 20px;
     margin-top: 20px;
 }
+
+.image-container > div {
+    flex: 1 0 26%;
+    max-width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .image-container img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 .image-container .image-caption {
     margin-top: 10px;
+}
+#map {
+    width: 40%;
+    height: 400px;
+    margin: 0 auto;
 }

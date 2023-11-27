@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ee">
 <head>
@@ -10,7 +11,6 @@
 </head>
 <body>
     <h1>MUUD ÜHIKAD</h1>
-    <p>Suurimad ühiselamud peale Tartu Ülikooli ühikate.</p>
     <div class="image-container">
         <div>  
             <img src="https://www.nooruse.ee/wp-content/uploads/2022/05/yhikas4-1024x683.jpg" alt="Image 1">
@@ -43,5 +43,52 @@
             <div class="image-caption">Raatuse 22</div>
         </div>
     </div>
+    <div id="map" style="height: 400px;"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7Fii7rFXzuVReVJX8R9qv5fLo6hgSOXo&callback=initMap" async defer></script>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 58.380602, lng: 26.729870},
+                zoom: 12
+            });
+
+            var marker1 = new google.maps.Marker({
+                position: {lat: 58.380602, lng: 26.729870},
+                map: map,
+                title: 'Tartu Tervishoiu Kõrgkool'
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: {lat: 58.383066, lng: 26.717032},
+                map: map,
+                title: 'Tartu Rakenduslik Kolledž Kopli'
+            });
+
+            var marker3 = new google.maps.Marker({
+                position: {lat: 58.372944, lng: 26.721962},
+                map: map,
+                title: 'Tartu Rakenduslik Kolledž Põllu'
+            });
+
+            var marker4 = new google.maps.Marker({
+                position: {lat: 58.375727, lng: 26.720481},
+                map: map,
+                title: 'EMÜ Torni ühiselamu'
+            });
+
+            var marker5 = new google.maps.Marker({
+                position: {lat: 58.385698, lng: 26.720912},
+                map: map,
+                title: 'EMÜ Bettoni ühiselamu'
+            });
+
+            var marker6 = new google.maps.Marker({
+                position: {lat: 58.378592, lng: 26.722775},
+                map: map,
+                title: 'Tartu Downtown Hostel'
+            });
+        }
+    </script>
 </body>
 </html>
