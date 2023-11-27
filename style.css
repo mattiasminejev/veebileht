@@ -1,17 +1,49 @@
-.button-container {
+body {
+    background-color:lavender;
+}
+.header {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: cadetblue;
+    color: white;
+    font-size: 30px;
+}
+.button-container1 {
     display: inline-block; /* This makes the buttons appear next to each other */
     margin-bottom: 60px;
 }
-
-.button {
+.button-container2 {
+    margin-bottom: 60px;
+}
+.header-button {
     padding: 10px 20px; /* Adjust the padding as needed */
     margin: 5px; /* Add margin to separate the buttons */
-    background-color: #007bff; /* Button background color */
+    background-color: cadetblue; /* Button background color */
     color: #fff; /* Text color */
     border: none; /* Remove button border */
     border-radius: 5px; /* Add rounded corners */
 }
+.header-button:hover {
+    color: blue;
+}
+.map-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+    font-size: larger;
+}
+.map-button:hover {
+    background-color: gray;
+}
+
+.button-and-map-container  {
+    display: flex;
+}
 
 h1 {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
+
