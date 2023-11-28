@@ -1,0 +1,28 @@
+h1 {
+    color: rgb(54, 40, 9); 
+    font-size: 32px; 
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    align-items: center;
+    background-color: blanchedalmond;
+}
+img {
+    width: 200px; 
+    height: auto; 
+  }
+h2 {
+    clear: both;
+}
+
+.row {
+    flex: 50%;
+}
+
+.wrapper {
+    display: flex;
+}
+a {
+    font-size: 20px;
+}
