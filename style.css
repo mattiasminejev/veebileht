@@ -1,7 +1,6 @@
 h1 {
     margin-bottom: 40px;
 }
-
 body {
     background-color:lavender;
 }
@@ -16,11 +15,9 @@ header {
     font-size: 30px;
     position: fixed;
 }
-
-.header_nupp_ja_tekst {
+.header_kodunupp_ja_pealkiri {
     display: flex;
 }
-
 a.kodunupp {
     display: inline-block;
     height: 50px;
@@ -30,38 +27,36 @@ a.kodunupp {
     border: 3px;
     border-radius: 10%;
     text-decoration: none;
-    color: #fff; /* Text color */
-    background-color: #3498db; /* Button background color */
+    color: #fff; 
+    background-color: #3498db; 
     transition: background-color 0.3s ease-in-out;
   }
-  a.kodunupp i {
+a.kodunupp i {
     position: fixed;
     margin-top: 10px;
     margin-left: 8px;
-
   }
-  /* Hover effect */
-  a.kodunupp:hover {
-    background-color: #2980b9; /* Change button background color on hover */
+a.kodunupp:hover {
+    background-color: #2980b9; 
   }
-.button-container1 {
-    display: inline-block; /* This makes the buttons appear next to each other */
+.header-vahelehe-nuppud {
+    display: inline-block; 
     margin-bottom: 60px;
 }
 .button-container2 {
     margin-bottom: 60px;
 }
-.header-button {
-    padding: 10px 20px; /* Adjust the padding as needed */
+.header-nupp {
+    padding: 10px 20px; 
     text-decoration: none;
-    margin: 5px; /* Add margin to separate the buttons */
-    background-color: cadetblue; /* Button background color */
-    color: #fff; /* Text color */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Add rounded corners */
+    margin: 5px; 
+    background-color: cadetblue; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px;
     transition: color 0.3s ease-in-out;
 }
-.header-button:hover {
+.header-nupp:hover {
     color: blue;
 }
 
@@ -94,12 +89,11 @@ a.kodunupp {
     display: flex;
 }
 
-/* Style for nuppud1 and nuppud2 */
+
 .nuppudl, .nuppudr {
-    margin: 10px; /* Adjust margin as needed */
+    margin: 10px; 
 }
 
-/* Style for buttons */
 .vordlusnuppud {
     display: block;
     margin: 5px;
