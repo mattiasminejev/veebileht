@@ -1,6 +1,12 @@
 h1 {
     margin-bottom: 40px;
 }
+.header-h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 40px;
+    color: white;
+}
 body {
     background-color:lavender;
 }
@@ -12,6 +18,7 @@ header {
     text-align: left;
     background-color: cadetblue;
     color: white;
+    text-size-adjust:30px;
     font-size: 30px;
     position: fixed;
 }
@@ -28,7 +35,7 @@ a.kodunupp {
     border-radius: 10%;
     text-decoration: none;
     color: #fff; 
-    background-color: #3498db; 
+    background-color: #015085; 
     transition: background-color 0.3s ease-in-out;
   }
 a.kodunupp i {
@@ -37,13 +44,11 @@ a.kodunupp i {
     margin-left: 8px;
   }
 a.kodunupp:hover {
-    background-color: #2980b9; 
+    background-color: #2980b9;
+    cursor: pointer;
   }
 .header-vahelehe-nuppud {
     display: inline-block; 
-    margin-bottom: 60px;
-}
-.button-container2 {
     margin-bottom: 60px;
 }
 .header-nupp {
@@ -57,56 +62,81 @@ a.kodunupp:hover {
     transition: color 0.3s ease-in-out;
 }
 .header-nupp:hover {
-    color: blue;
+    color: #2980b9;
+    cursor: pointer;
 }
-
 .button-and-map-container  {
     display: flex;
     padding-top: 250px;
 }
-
+.mapi-nuppudude-hoidik {
+    margin-bottom: 60px;
+}
 .map-button {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: lightgray;
     color: black;
     font-size: larger;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out
 }
 .map-button:hover {
-    background-color: gray;
+    background-color: gray;    
+    cursor: pointer;
 }
-
 .map {
     width: 1000px;
-    height: 600px;
-    border: 5;
+    height: 100%;
+    box-shadow:cadetblue;
     border-radius: 3%;
-    
 }
-
 .vordluselement {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
-
-
+.vordluselemendi-pohisisu {
+    width: 75%;
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.vorreldavl, .vorreldavr {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 .nuppudl, .nuppudr {
-    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll; 
 }
-
 .vordlusnuppud {
-    display: block;
-    margin: 5px;
-    padding: 8px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+    font-size: larger;
+    transition: background-color 0.3s ease-in-out
 }   
-
 .vordlusnuppud:hover {
-    background-color: #39873c;
+    background-color: gray;
+    cursor: pointer;
 }
-
+.teksti-hoidik {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(151, 205, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
