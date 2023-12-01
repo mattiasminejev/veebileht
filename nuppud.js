@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var currentLocation = 0; 
         var locations = [
             "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8366.613928295701!2d26.7315953!3d58.3823806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36dd6ae4578b%3A0x2259f770c68c040e!2s%C3%9Cli%C3%B5pilaselamu%20Raatuse%2022!5e0!3m2!1sen!2see!4v1701380225610!5m2!1sen!2see",
@@ -8,6 +9,13 @@ var currentLocation = 0;
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2092.128413249214!2d26.71039741254064!3d58.3743711869837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb371e4f567e39%3A0x5b4c52be62d0a663!2sTiigi%2014%2C%2050410%20Tartu!5e0!3m2!1sen!2see!4v1701380753950!5m2!1sen!2see",
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.4394739453382!2d26.72478451254137!3d58.38598948606277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36e887093507%3A0xf565b9af21a68bb8!2sNarva%20mnt%2089%2C%2051009%20Tartu!5e0!3m2!1sen!2see!4v1701380818582!5m2!1sen!2see",
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2092.686354089068!2d26.68752841254005!3d58.36496098772958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb3711b94c34f9%3A0x598675490b2a68fd!2sNooruse%207%2C%2050411%20Tartu!5e0!3m2!1sen!2see!4v1701380863033!5m2!1sen!2see"
+=======
+//kaardi_nuppud
+var currentLocation = 0; 
+        var locations = [
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.4744972843464!2d26.722176412337006!3d58.38539888610982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb37b2e8a6ef3d%3A0xb1c21ea409a3845f!2sTartu%20%C3%9Clikooli%20Delta%20keskus!5e0!3m2!1set!2see!4v1699810918712!5m2!1set!2see",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.430140137354!2d26.72386083959835!3d58.386146881804116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36e8a66f2bff%3A0x97fc3b22119ce19c!2sKonsum!5e0!3m2!1set!2see!4v1699811464918!5m2!1set!2see"
+>>>>>>> 64b38198cf7c4006f23ab604585c9b85db640569
             // Add URLs for more locations
         ];
 
@@ -17,6 +25,10 @@ var currentLocation = 0;
             mapIframe.src = locations[currentLocation];
         }
 //script by Chat GPT
+<<<<<<< HEAD
+=======
+//vordlus_nuppud
+>>>>>>> 64b38198cf7c4006f23ab604585c9b85db640569
 function hindl(newText) {
     document.getElementById('hindl').innerText = newText;
 }
