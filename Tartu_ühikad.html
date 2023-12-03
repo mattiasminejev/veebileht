@@ -6,36 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1>Tartu ühikad</h1>
-        <div class="button-container1">
-            <a class="header-button" href="https://www.youtube.com">Vaheleht 1</a>
-            <a class="header-button" href="https://www.google.com">Vaheleht 2</a>
+    <header>
+        <div class="header_kodunupp_ja_pealkiri">
+            <a href="Tartu_ühikad.html" class="kodunupp"><i class="fas fa-home"></i></a>
+            <h1 class="header-h1">Tartu ühikad</h1>
         </div>
-    </div>
-    
+        <div class="header-vahelehe-nuppud">
+            <a class="header-nupp" href="tu_uhikad.html">TÜ ühikad</a>
+            <a class="header-nupp" href="https://www.google.com">Vaheleht 2</a>
+        </div>
+    </header>
+
+
+
     <div class="button-and-map-container">
         <div id="map-container">
-            <iframe id="locationMap" width="1600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.4744972843464!2d26.722176412337006!3d58.38539888610982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb37b2e8a6ef3d%3A0xb1c21ea409a3845f!2sTartu%20%C3%9Clikooli%20Delta%20keskus!5e0!3m2!1set!2see!4v1699810918712!5m2!1set!2see"></iframe>
+            <iframe id="locationMap" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.4744972843464!2d26.722176412337006!3d58.38539888610982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb37b2e8a6ef3d%3A0xb1c21ea409a3845f!2sTartu%20%C3%9Clikooli%20Delta%20keskus!5e0!3m2!1set!2see!4v1699810918712!5m2!1set!2see"></iframe>
         </div>
 
-        <div class="button-container2">
-            <button class="map-button" onclick="switchLocation(0)">Delta</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
-            <button class="map-button" onclick="switchLocation(1)">pikksadfsdlfjlsdfjlksdjlfjsldkfjlksdfjklsdjklfjsdklfj</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
-            <button class="map-button" onclick="switchLocation(1)">Konsum</button>
+        <div class="mapi-nuppude-hoidik">
+            <div class="tü-ühikate-nuppud">
+                <h1>TÜ ühikad</h1>
+                <button class="map-button" onclick="switchLocation(0)">Raatuse 22</button>
+                <button class="map-button" onclick="switchLocation(1)">Purde 27</button>
+                <button class="map-button" onclick="switchLocation(2)">Narva mnt 25</button>
+                <button class="map-button" onclick="switchLocation(3)">Pepleri 14</button>
+                <button class="map-button" onclick="switchLocation(4)">Narva mnt 27</button>
+                <button class="map-button" onclick="switchLocation(5)">Tiigi 14</button>
+                <button class="map-button" onclick="switchLocation(6)">Narva mnt 89</button>
+                <button class="map-button" onclick="switchLocation(7)">Nooruse 7</button>
+            </div>
+            <div class="muude-ühikate-nuppud">
+                <h1>muud ühikad</h1>
+                <button class="map-button" onclick="switchLocation(8)"></button>
+                <button class="map-button" onclick="switchLocation(9)"></button>
+                <button class="map-button" onclick="switchLocation(10)"></button>
+                <button class="map-button" onclick="switchLocation(11)"></button>
+                <button class="map-button" onclick="switchLocation(12)"></button>
+                <button class="map-button" onclick="switchLocation(13)"></button>
+                <button class="map-button" onclick="switchLocation(14)"></button>
+                <button class="map-button" onclick="switchLocation(15)"></button>
+            </div>
         </div>
     </div>
 
+    
+
+    <div class="vordluselement">
+        <h1>VÕRDLUSELEMENT</h1>
+        <div class="vordluselemendi-pohisisu">
+            <div class="vorreldavl">                
+                <div class="nuppudl">
+                    <button class="vordlusnuppud" onclick="nimil('Raatuse 22'); hindl('144.50€-289€')">Raatuse 22</button>
+                    <button class="vordlusnuppud" onclick="nimil('Purde 27'); hindl('70€-246€')">Purde 27</button>
+                    <button class="vordlusnuppud" onclick="nimil('Narva mnt 25'); hindl('144.50€-302€')">Narva mnt 25</button>
+                    <button class="vordlusnuppud" onclick="nimil('Pepleri 14'); hindl('144€-405€')">Pepleri 14</button>
+                    <button class="vordlusnuppud" onclick="nimil('Narva mnt 27'); hindl('144.50€-316€')">Narva mnt 27</button>
+                    <button class="vordlusnuppud" onclick="nimil('Tiigi 14'); hindl('133€-266€')">Tiigi 14</button>
+                    <button class="vordlusnuppud" onclick="nimil('Narva mnt 89'); hindl('75.50€-149€')">Narva mnt 89</button>
+                    <button class="vordlusnuppud" onclick="nimil('Nooruse 7'); hindl('renoveerimisel')">Nooruse 7</button>
+                </div>
+                
+                <div class="teksti-hoidik">
+                    <h2 id="nimil">nimi</h2>
+                    <h3 id="hindl">hind</h3>
+                </div>
+            </div>
+
+            <h1>VS</h1>
+            
+            <div class="vorreldavr">                
+                <div class="teksti-hoidik">
+                    <h2 id="nimir">nimi</h2>
+                    <h3 id="hindr">hind</h3>
+                </div>
+
+                <div class="nuppudr">
+                    <button class="vordlusnuppud" onclick="nimir('Raatuse 22'); hindr('144.50€-289€')">Raatuse 22</button>
+                    <button class="vordlusnuppud" onclick="nimir('Purde 27'); hindr('70€-246€')">Purde 27</button>
+                    <button class="vordlusnuppud" onclick="nimir('Narva mnt 25'); hindr('144.50€-302€')">Narva mnt 25</button>
+                    <button class="vordlusnuppud" onclick="nimir('Pepleri 14'); hindr('144€-405€')">Pepleri 14</button>
+                    <button class="vordlusnuppud" onclick="nimir('Narva mnt 27'); hindr('144.50€-316€')">Narva mnt 27</button>
+                    <button class="vordlusnuppud" onclick="nimir('Tiigi 14'); hindr('133€-266€')">Tiigi 14</button>
+                    <button class="vordlusnuppud" onclick="nimir('Narva mnt 89'); hindr('75.50€-149€')">Narva mnt 89</button>
+                    <button class="vordlusnuppud" onclick="nimir('Nooruse 7'); hindr('renoveerimisel')">Nooruse 7</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="nuppud.js" defer></script>
 </body>
 
