@@ -2,27 +2,27 @@
 <html lang="ee">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Muud ühikad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muud-ühikad</title>
     <link rel="stylesheet" href="Main_style.css">
     <link rel="stylesheet" href="Muudühikad.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
 </head>
-<header>
-    <div class="header_kodunupp_ja_pealkiri">
-        <a href="Avaleht.html" class="kodunupp"><i class="fas fa-home"></i></a>
-        <h1 class="header-h1">Tartu ühikad</h1>
-    </div>
-    <div class="header-vahelehe-nuppud">
-        <a class="header-nupp" href="tu_uhikad.html">TÜ ühikad</a>
-        <a class="header-nupp" href="Muudühikad.html">Muud ühikad</a>
-    </div>
-</header>
+
 <body>
-    <h1>MUUD ÜHIKAD</h1>
+    <header>
+        <div class="header_kodunupp_ja_pealkiri"> 
+            <h1 class="header-h1">Tartu ühikad</h1>
+        </div>
+        <div class="header-nuppude-hoidik">
+            <a href="Avaleht.html" class="kodunupp"><i class="fas fa-home"></i></a>
+            <a class="header-nupp" href="tu_uhikad.html">TÜ ühikad</a>
+            <a class="header-nupp" href="Muudühikad.html">Muud ühikad</a>
+        </div>
+    </header>
+    <hr>
+    <h1>Muud ühikad</h1>
     <div class="image-container">
         <div>  
             <img src="https://www.nooruse.ee/wp-content/uploads/2022/05/yhikas4-1024x683.jpg" alt="Image 1">
@@ -68,7 +68,7 @@
         <div>
             <img src="https://dorm.emu.ee/userfiles/image/gallery/2/thumb/Kreutzwaldi52_4.jpg" alt="Image 4">
             <div class="image-caption">
-                <h2>EMÜ Torni ühiselamu</h2>
+                <h4>EMÜ Torn</h4>
                 <ul>
                     <li>Kreutzwaldi52</li>
                     <li>Ühe/kahekohalised toad</li>
@@ -81,7 +81,7 @@
         <div>
             <img src="https://dorm.emu.ee/userfiles/image/gallery/betton/thumb/20190306_113922.jpg" alt="Image 5">
             <div class="image-caption">
-                <h4>EMÜ Bettoni ühiselamu</h4>
+                <h4>EMÜ Betton</h4>
                 <ul>
                     <li>Friedebert Tuglase 7</li>
                     <li>Ühe/kahekohalised toad</li>
@@ -106,5 +106,13 @@
             </div>
         </div>
     </div>
+    <button id="backToTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="tagasi-yless-nupp.js" defer></script>
+    <footer>
+        <p>2023 Tartu Ühikad</p>
+    </footer>
 </body>
 </html>

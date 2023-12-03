@@ -4,111 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tartu-ühiad</title>
     <link rel="stylesheet" href="Main_style.css">
     <link rel="stylesheet" href="Avaleht.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<header>
-    <div class="header_kodunupp_ja_pealkiri">
-        <a href="Avaleht.html" class="kodunupp"><i class="fas fa-home"></i></a>
-        <h1 class="header-h1">Tartu ühikad</h1>
-    </div>
-    <div class="header-vahelehe-nuppud">
-        <a class="header-nupp" href="tu_uhikad.html">TÜ ühikad</a>
-        <a class="header-nupp" href="Muudühikad.html">Muud ühikad</a>
-    </div>
-</header>
-
 <body>
-    <div class="button-and-map-container">
-        <div id="map-container">
+    <header>
+        <div class="header_kodunupp_ja_pealkiri"> 
+            <h1 class="header-h1">Tartu ühikad</h1>
+        </div>
+        <div class="header-nuppude-hoidik">
+            <a href="Avaleht.html" class="kodunupp"><i class="fas fa-home"></i></a>
+            <a class="header-nupp" href="tu_uhikad.html">TÜ ühikad</a>
+            <a class="header-nupp" href="Muudühikad.html">Muud ühikad</a>
+        </div>
+    </header>
+    <hr>
+    <h1>Tartu ühikate veebileht</h1>
+<!--map-->
+    <div class="mapi-hoidik">
+        <div class="siin-on-map">   
             <iframe id="locationMap" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.4744972843464!2d26.722176412337006!3d58.38539888610982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb37b2e8a6ef3d%3A0xb1c21ea409a3845f!2sTartu%20%C3%9Clikooli%20Delta%20keskus!5e0!3m2!1set!2see!4v1699810918712!5m2!1set!2see"></iframe>
         </div>
-
-        <div class="mapi-nuppude-hoidik">
-            <div class="tü-ühikate-nuppud">
-                <h1>TÜ ühikad</h1>
-                <button class="map-button" onclick="switchLocation(0)">Raatuse 22</button>
-                <button class="map-button" onclick="switchLocation(1)">Purde 27</button>
-                <button class="map-button" onclick="switchLocation(2)">Narva mnt 25</button>
-                <button class="map-button" onclick="switchLocation(3)">Pepleri 14</button>
-                <button class="map-button" onclick="switchLocation(4)">Narva mnt 27</button>
-                <button class="map-button" onclick="switchLocation(5)">Tiigi 14</button>
-                <button class="map-button" onclick="switchLocation(6)">Narva mnt 89</button>
-                <button class="map-button" onclick="switchLocation(7)">Nooruse 7</button>
+        <div class="koolum">
+            <div class="space-evenly">
+                <div style="width: 250px;">
+                   <h1>Tartu Ülikooli ühikad</h1>
+                </div>
+                <div style="width: 250px;">
+                    <h1>Muud ühikad</h1>
+                </div>
             </div>
-            <div class="muude-ühikate-nuppud">
-                <h1>muud ühikad</h1>
-                <button class="map-button" onclick="switchLocation(8)">Tervishoiu Kõrgkool</button>
-                <button class="map-button" onclick="switchLocation(11)">EMÜ Torn</button>
-                <button class="map-button" onclick="switchLocation(9)">Rakenduslik Kolledž - Kopli 1C</button>
-                <button class="map-button" onclick="switchLocation(10)">Rakenduslik Kolledž - Põllu 11C</button>
-                <button class="map-button" onclick="switchLocation(12)">EMÜ Betton</button>
-                <button class="map-button" onclick="switchLocation(13)">Downtown Hostel</button>
+            <div class="space-evenly">
+                <div class="nuppudl">
+                    <button class="mapi-nupp" onclick="switchLocation(0)">Raatuse 22</button>
+                    <button class="mapi-nupp" onclick="switchLocation(1)">Purde 27</button>
+                    <button class="mapi-nupp" onclick="switchLocation(2)">Narva mnt 25</button>
+                    <button class="mapi-nupp" onclick="switchLocation(3)">Pepleri 14</button>
+                    <button class="mapi-nupp" onclick="switchLocation(4)">Narva mnt 27</button>
+                    <button class="mapi-nupp" onclick="switchLocation(5)">Tiigi 14</button>
+                    <button class="mapi-nupp" onclick="switchLocation(6)">Narva mnt 89</button>
+                    <button class="mapi-nupp" onclick="switchLocation(7)">Nooruse 7</button>
+                </div>
+                <div class="nuppudr">
+                    <button class="mapi-nupp" onclick="switchLocation(8)">Tervishoiu Kõrgkool</button>
+                    <button class="mapi-nupp" onclick="switchLocation(11)">EMÜ Torn</button>
+                    <button class="mapi-nupp" onclick="switchLocation(9)">Rakenduslik Kolledž - Kopli 1C</button>
+                    <button class="mapi-nupp" onclick="switchLocation(10)">Rakenduslik Kolledž - Põllu 11C</button>
+                    <button class="mapi-nupp" onclick="switchLocation(12)">EMÜ Betton</button>
+                    <button class="mapi-nupp" onclick="switchLocation(13)">Downtown Hostel</button>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
+<!--võrdluselement-->
+    <div class="vordluselendi-hoidik">
+        <div class="hinnavõrdlus">
+            <h1>Hinnavõrdlus</h1>
+            <div class="vordluselemendi-pohisisu">                       
+                <div class="teksti-hoidik">
+                    <div>
+                        <h2 id="nimil">Nimi</h2>
+                        <h3 id="hindl">Hind</h3>
+                    </div>
+                </div>
 
-    
-
-    <div class="vordluselement">
-        <h1>VÕRDLUSELEMENT</h1>
-        <div class="vordluselemendi-pohisisu">
-            <div class="vorreldavl">                
-                <div class="nuppudl">
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Raatuse 22'); hindl('144.50€-289€')">TÜ Raatuse 22</button>
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Purde 27'); hindl('70€-246€')">TÜ Purde 27</button>
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Narva mnt 25'); hindl('144.50€-302€')">TÜ Narva mnt 25</button>
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Pepleri 14'); hindl('144€-405€')">TÜ Pepleri 14</button>
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Narva mnt 27'); hindl('144.50€-316€')">TÜ Narva mnt 27</button>
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Tiigi 14'); hindl('133€-266€')">TÜ Tiigi 14</button>
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Narva mnt 89'); hindl('75.50€-149€')">TÜ Narva mnt 89</button>
-                    <button class="vordlusnuppud" onclick="nimil('TÜ Nooruse 7'); hindl('renoveerimisel')">TÜ Nooruse 7</button>
-                    <button class="vordlusnuppud" onclick="nimil('Tervishoiu Kõrgkool'); hindl('53€-66€')">Tervishoiu Kõrgkool</button>
-                    <button class="vordlusnuppud" onclick="nimil('Rakenduslik Kolledž (Kopli)'); hindl('65€')">Rakenduslik Kolledž (Kopli)</button>
-                    <button class="vordlusnuppud" onclick="nimil('Rakenduslik Kolledž (Põllu)'); hindl('55€')">Rakenduslik Kolledž (Põllu)</button>
-                    <button class="vordlusnuppud" onclick="nimil('EMÜ Torn'); hindl('142€-180€')">EMÜ Torn</button>
-                    <button class="vordlusnuppud" onclick="nimil('EMÜ Betton'); hindl('126€-165€')">EMÜ Betton</button>
-                    <button class="vordlusnuppud" onclick="nimil('Downtown Hostel'); hindl('35€ öö (1050 kuu)')">Downtown Hostel</button>
-
+                <h1>VS</h1>
+                
+                              
+                <div class="teksti-hoidik">
+                    <div>
+                        <h2 id="nimir">Nimi</h2>
+                        <h3 id="hindr">Hind</h3>
+                    </div>
                 </div>
                 
-                <div class="teksti-hoidik">
-                    <h2 id="nimil">nimi</h2>
-                    <h3 id="hindl">hind</h3>
+            </div>
+        </div>
+        <div class="koolum">
+            <div class="space-evenly">
+                <div style="width: 250px;">
+                   <h1>Valige esimene võrreldav</h1>
+                </div>
+                <div style="width: 250px;">
+                    <h1>Valige teine võrreldav</h1>
                 </div>
             </div>
-
-            <h1>VS</h1>
-            
-            <div class="vorreldavr">                
-                <div class="teksti-hoidik">
-                    <h2 id="nimir">nimi</h2>
-                    <h3 id="hindr">hind</h3>
+            <div class="space-evenly">
+                <div class="nuppudl">
+                    <button class="vordlusnupp" onclick="nimil('TÜ Raatuse 22'); hindl('144.50€-289€')">TÜ Raatuse 22</button>
+                    <button class="vordlusnupp" onclick="nimil('TÜ Purde 27'); hindl('70€-246€')">TÜ Purde 27</button>
+                    <button class="vordlusnupp" onclick="nimil('TÜ Narva mnt 25'); hindl('144.50€-302€')">TÜ Narva mnt 25</button>
+                    <button class="vordlusnupp" onclick="nimil('TÜ Pepleri 14'); hindl('144€-405€')">TÜ Pepleri 14</button>
+                    <button class="vordlusnupp" onclick="nimil('TÜ Narva mnt 27'); hindl('144.50€-316€')">TÜ Narva mnt 27</button>
+                    <button class="vordlusnupp" onclick="nimil('TÜ Tiigi 14'); hindl('133€-266€')">TÜ Tiigi 14</button>
+                    <button class="vordlusnupp" onclick="nimil('TÜ Narva mnt 89'); hindl('75.50€-149€')">TÜ Narva mnt 89</button>
+                    <button class="vordlusnupp" onclick="nimil('TÜ Nooruse 7'); hindl('renoveerimisel')">TÜ Nooruse 7</button>
+                    <button class="vordlusnupp" onclick="nimil('Tervishoiu Kõrgkool'); hindl('53€-66€')">Tervishoiu Kõrgkool</button>
+                    <button class="vordlusnupp" onclick="nimil('Rakenduslik Kolledž (Kopli)'); hindl('65€')">Rakenduslik Kolledž (Kopli)</button>
+                    <button class="vordlusnupp" onclick="nimil('Rakenduslik Kolledž (Põllu)'); hindl('55€')">Rakenduslik Kolledž (Põllu)</button>
+                    <button class="vordlusnupp" onclick="nimil('EMÜ Torn'); hindl('142€-180€')">EMÜ Torn</button>
+                    <button class="vordlusnupp" onclick="nimil('EMÜ Betton'); hindl('126€-165€')">EMÜ Betton</button>
+                    <button class="vordlusnupp" onclick="nimil('Downtown Hostel'); hindl('35€ öö (1050 kuu)')">Downtown Hostel</button>
                 </div>
 
                 <div class="nuppudr">
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Raatuse 22'); hindr('144.50€-289€')">TÜ Raatuse 22</button>
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Purde 27'); hindr('70€-246€')">TÜ Purde 27</button>
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Narva mnt 25'); hindr('144.50€-302€')">TÜ Narva mnt 25</button>
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Pepleri 14'); hindr('144€-405€')">TÜ Pepleri 14</button>
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Narva mnt 27'); hindr('144.50€-316€')">TÜ Narva mnt 27</button>
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Tiigi 14'); hindr('133€-266€')">TÜ Tiigi 14</button>
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Narva mnt 89'); hindr('75.50€-149€')">TÜ Narva mnt 89</button>
-                    <button class="vordlusnuppud" onclick="nimir('TÜ Nooruse 7'); hindr('renoveerimisel')">TÜ Nooruse 7</button>
-                    <button class="vordlusnuppud" onclick="nimir('Tervishoiu Kõrgkool'); hindr('53€-66€')">Tervishoiu Kõrgkool</button>
-                    <button class="vordlusnuppud" onclick="nimir('Rakenduslik Kolledž (Kopli)'); hindr('65€')">Rakenduslik Kolledž (Kopli)</button>
-                    <button class="vordlusnuppud" onclick="nimir('Rakenduslik Kolledž (Põllu)'); hindr('55€')">Rakenduslik Kolledž (Põllu)</button>
-                    <button class="vordlusnuppud" onclick="nimir('EMÜ Torn'); hindr('142€-180€')">EMÜ Torn</button>
-                    <button class="vordlusnuppud" onclick="nimir('EMÜ Betton'); hindr('126€-165€')">EMÜ Betton</button>
-                    <button class="vordlusnuppud" onclick="nimir('Downtown Hostel'); hindr('35€ öö (1050 kuu)')">Downtown Hostel</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Raatuse 22'); hindr('144.50€-289€')">TÜ Raatuse 22</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Purde 27'); hindr('70€-246€')">TÜ Purde 27</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Narva mnt 25'); hindr('144.50€-302€')">TÜ Narva mnt 25</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Pepleri 14'); hindr('144€-405€')">TÜ Pepleri 14</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Narva mnt 27'); hindr('144.50€-316€')">TÜ Narva mnt 27</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Tiigi 14'); hindr('133€-266€')">TÜ Tiigi 14</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Narva mnt 89'); hindr('75.50€-149€')">TÜ Narva mnt 89</button>
+                    <button class="vordlusnupp" onclick="nimir('TÜ Nooruse 7'); hindr('renoveerimisel')">TÜ Nooruse 7</button>
+                    <button class="vordlusnupp" onclick="nimir('Tervishoiu Kõrgkool'); hindr('53€-66€')">Tervishoiu Kõrgkool</button>
+                    <button class="vordlusnupp" onclick="nimir('Rakenduslik Kolledž (Kopli)'); hindr('65€')">Rakenduslik Kolledž (Kopli)</button>
+                    <button class="vordlusnupp" onclick="nimir('Rakenduslik Kolledž (Põllu)'); hindr('55€')">Rakenduslik Kolledž (Põllu)</button>
+                    <button class="vordlusnupp" onclick="nimir('EMÜ Torn'); hindr('142€-180€')">EMÜ Torn</button>
+                    <button class="vordlusnupp" onclick="nimir('EMÜ Betton'); hindr('126€-165€')">EMÜ Betton</button>
+                    <button class="vordlusnupp" onclick="nimir('Downtown Hostel'); hindr('35€ öö (1050 kuu)')">Downtown Hostel</button>
                 </div>
             </div>
         </div>
     </div>
+    
+    <button id="backToTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="tagasi-yless-nupp.js" defer></script>
     <script src="nuppud.js" defer></script>
+    
+    <footer>
+        <p>2023 Tartu Ühikad</p>
+    </footer>
 </body>
-
 </html>

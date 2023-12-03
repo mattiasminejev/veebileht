@@ -2,27 +2,26 @@
 <!DOCTYPE html>
 <html lang="ee">
 <head>
-    <link rel="stylesheet" type="text/css" href="tu_uhikad.css">
-    <link rel="stylesheet" href="Main_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TÜ_Ühikad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÜ-ühikad</title>
+    <link rel="stylesheet" href="Main_style.css">
     <link rel="stylesheet" href="tu_uhikad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<header>
-    <div class="header_kodunupp_ja_pealkiri">
-        <a href="Avaleht.html" class="kodunupp"><i class="fas fa-home"></i></a>
-        <h1 class="header-h1">Tartu ühikad</h1>
-    </div>
-    <div class="header-vahelehe-nuppud">
-        <a class="header-nupp" href="tu_uhikad.html">TÜ ühikad</a>
-        <a class="header-nupp" href="Muudühikad.html">Muud ühikad</a>
-    </div>
-</header>
+
 <body>
+    <header>
+        <div class="header_kodunupp_ja_pealkiri"> 
+            <h1 class="header-h1">Tartu ühikad</h1>
+        </div>
+        <div class="header-nuppude-hoidik">
+            <a href="Avaleht.html" class="kodunupp"><i class="fas fa-home"></i></a>
+            <a class="header-nupp" href="tu_uhikad.html">TÜ ühikad</a>
+            <a class="header-nupp" href="Muudühikad.html">Muud ühikad</a>
+        </div>
+    </header>
+    <hr>
     <h1>Tartu ülikooli ühikad</h1>
     <div class="image-container">
         <div>  
@@ -74,6 +73,7 @@
                     <li>Hinnad vahemikus 75.50€-149€</li>
                     <li>Puhkeruum koos lauatennise lauaga ja spordiruum</li>
                     <li>Üle tee asub õppehoone Delta</li>
+                </ul>
             </div>
         </div>
         <div>
@@ -104,7 +104,7 @@
         <div>
             <img src="https://www.campus.ee/wp-content/uploads/2023/05/YK-4843-300x200.jpg" alt="Image 6">
             <div class="image-caption">
-                <h4>tiigi 14</h4>
+                <h4>Tiigi 14</h4>
                 <ul>
                     <li>2- ja 3-toalised korterid, kus on 1- ja 2-kohalised toad, jagatud köök, duširuum ja WC</li>
                     <li>Hinnad vahemikus 133€-266€</li>
@@ -118,6 +118,14 @@
             </div>
         </div>
     </div> 
-    <a href="https://www.campus.ee/elamud/" target="_blank">Põhjalikum info Tartu Ülikooli ühiselamutest.</a>   
+    <a href="https://www.campus.ee/elamud/" target="_blank">Põhjalikum info Tartu Ülikooli ühiselamutest.</a>  
+    <button id="backToTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="tagasi-yless-nupp.js" defer></script>
+    <footer>
+        <p>2023 Tartu Ühikad</p>
+    </footer> 
 </body>
 </html>

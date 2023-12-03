@@ -40,4 +40,4 @@ function hindr(newText) {
 function nimir(newText) {
     document.getElementById('nimir').innerText = newText
 }
-//kõik funktsioonid koostatud Chat GPT abiga
+//kõik funktsioonid koostatud Chat GPT-d kasutades

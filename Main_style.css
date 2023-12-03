@@ -4,9 +4,21 @@ body {
 h1 {
     text-align: center;
     font-weight: bold;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
 }
+hr {
+    height: 1px;
+    background-color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+
+
 header {
-    width: 100%;
+    width: 99%;
     height: 200px;
     padding: 10px;
     margin-bottom: 10px;
@@ -14,27 +26,23 @@ header {
     background-color: cadetblue;
     color: white;
 }
-.header-h1 {
-    font-size: 4em;
-    font-weight: bold;
-    margin-top: 40px;
-    color: white;
-}
 .header_kodunupp_ja_pealkiri {
     display: flex;
+}
+.header-nuppude-hoidik {
+    display: inline-block; 
+    margin-left: 20px
 }
 a.kodunupp {
     display: inline-block;
     height: 50px;
     width: 50px;
-    margin-top: 50px;
-    margin-right: 10px;
-    border: 3px;
     border-radius: 10%;
     text-decoration: none;
     color: #fff; 
     background-color: #015085; 
     transition: background-color 0.3s ease-in-out;
+    margin-right: 5px
   }
 a.kodunupp i {
     margin-top: 10px;
@@ -45,22 +53,50 @@ a.kodunupp:hover {
     background-color: #2980b9;
     cursor: pointer;
   }
-.header-vahelehe-nuppud {
-    display: inline-block; 
-    margin-bottom: 60px;
-}
 .header-nupp {
     font-size: 30px;
-    padding: 10px 20px; 
+    padding: 10px 10px; 
     text-decoration: none;
     margin: 5px; 
     background-color: cadetblue; 
     color: #fff; 
-    border: none; 
-    border-radius: 5px;
     transition: color 0.3s ease-in-out;
 }
 .header-nupp:hover {
     color: #2980b9;
     cursor: pointer;
+}
+.header-h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: cadetblue;
+    color: white;
+    bottom: 0;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#backToTopBtn:hover {
+    background-color: #015085;
 }
