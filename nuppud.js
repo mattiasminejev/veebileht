@@ -24,7 +24,6 @@ var currentLocation = 0;
             var mapIframe = document.getElementById('locationMap');
             mapIframe.src = locations[currentLocation];
         }
-//kood inspireeritud Chat GPT-lt
 //võrdluselemendis vasaku võrreldava hinna lahtri muutmise funktsioon
 function hindl(newText) {
     document.getElementById('hindl').innerText = newText;
@@ -41,4 +40,4 @@ function hindr(newText) {
 function nimir(newText) {
     document.getElementById('nimir').innerText = newText
 }
-//kood inspireeritud Chat GPT-lt
+//kõik funktsioonid koostatud Chat GPT abiga
